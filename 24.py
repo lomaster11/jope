@@ -38,7 +38,7 @@ else:
 
 threadCount = input(' How many threads to run?:  ')
 worker = input('Name Worker:')
-secondCount = int(input("Введите кол-во часов: "))
+secondCount = int(input("How to time?: "))
 count = 0
 found = 0
 class telegram:
@@ -72,7 +72,7 @@ def isCheckWork(secondCount):
         try:
             if time.time() >= lastSecondTime:
                 lastSecondTime = time.time()+secondCount*60*60
-                send_telegram(f"Я нигер, я работаю! {worker}")              
+                send_telegram(f"i Work! {worker}")              
         except Exception as e:
             print(e)
             pass
